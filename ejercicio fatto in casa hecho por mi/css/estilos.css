@@ -1,0 +1,100 @@
+/* no es necesario * margin 0 padding... / no hacer reset */
+/* usar este css para SOBREESCRIBIR ASUNTOS DE BOOTSTRAP q necesito q sean diferentes */
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+    url('../fonts/bebasneue_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('../fonts/universltstd-light-webfont.woff2') format('woff2'),
+    url('../fonts/universltstd-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*COLORES*/
+:root {
+  --amarillo: #ffc107;
+  --negro: #000000;
+  --blanco: #FFFFFF;
+  --grises: #D7D9D6;
+}
+
+body {
+  font-family: 'Univers';
+}
+
+h1, h2, a {
+  font-family: 'Bebas';
+}
+
+.btn.btn-dark {
+  width: 100%;
+  border-radius: 0;
+}
+
+header figure img {
+  max-width: 180px;
+}
+
+header {
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  min-height: 40vh;
+}
+
+header h1 {
+  font-size: 64px;
+}
+
+header p {
+  font-size: 24px;
+}
+
+img {
+  border-radius: 8px;
+}
+
+#servicios {
+  background-color: var(--grises);
+}
+
+.btn.btn-warning {
+  border-radius: 48px;
+}
+
+footer {
+  color: white;
+  background-color: #000000;
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+.table-dark {
+  --bs-table-border-color: var(--neutral);
+}
+
+#servicios figure .img-fluid{
+ height: 100%;
+ object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  li:first-child  .btn-dark{
+      border-radius: 3rem 0 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  li:last-child .btn-dark {
+        border-radius:  0 3rem 3rem 0 ;
+    }
+}
+

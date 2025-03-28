@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fatto in casa</title>
+	<meta name="description" content="Fatto in casa">
+	<link rel="shortcut icon" href="img/logo_fic.svg" type="image/x-icon">
+
+	<!-- Enlaces a CSS -->
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<!-- MI propio CSS -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- Enlaces a JS -->
+	<!-- JS de Bootstrap -->
+	<script src="js/bootstrap.bundle.js"></script>
+	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+</head>
+
+<body>
+	<header id="inicio">
+		<div class="container-fluid text-center py-2">
+			<div class="row justify-content-center align-content-center justify-content-md-between align-items-center">
+				<figure class="col-3 col-md-2">
+					<img src="img/logo_fic.svg" alt="logo" class="img-fluid">
+				</figure>
+				<nav class="col-md-8">
+					<ul class="row row-cols-2 list-unstyled m-0 row-cols-xl-4">
+						<li class="px-0"><a class="btn btn-dark" href="#inicio">INICIO</a></li>
+						<li class="px-0"><a class="btn btn-dark" href="#productos">PRODUCTOS</a></li>
+						<li class="px-0"><a class="btn btn-dark" href="#servicios">SERVICIOS</a></li>
+						<li class="px-0"><a class="btn btn-dark" href="#contacto">CONTACTO</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="py-3">
+				<p>Boutique de Pastas</p>
+				<h1>LA MEJOR PASTA CASERA EN TU HOGAR</h1>
+				<a class="btn btn-warning" href="#">Ver nuestras especialidades</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="productos py-3">
+			<div class="container">
+				<div class="row justify-content-center align-content-center text-center row-cols-md-2 py-5 gy-3 row-cols-xl-3">
+					<h2 class="col-md-12 col-xl-12">RECOMENDADAS <br>
+						DE LA SEMANA</h2>
+					<article>
+						<figure> <img class="img-fluid" src="img/01.jpg" alt=""></figure>
+						<h3>Spaghetti</h3>
+						<p>Morron y sesamo</p>
+						<a class="btn btn-warning" href="">Pedir!</a>
+					</article>
+					<article>
+						<figure> <img class="img-fluid" src="img/02.jpg" alt=""></figure>
+						<h3>Spaghetti</h3>
+						<p>Morron y sesamo</p>
+						<a class="btn btn-warning" href="">Pedir!</a>
+					</article>
+					<article>
+						<figure> <img class="img-fluid" src="img/03.jpg" alt=""></figure>
+						<h3>Spaghetti</h3>
+						<p>Morron y sesamo</p>
+						<a class="btn btn-warning" href="">Pedir!</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="servicios">
+			<div class="container-fluid py-5">
+				<div class="container">
+					<div class="row row-cols-md-2">
+						<h2 class="col-md-12 text-center">LAS CLASICAS</h2>
+						<article>
+							<div class="row row-cols-md-2 flex-md-row-reverse">
+								<figure><img class="img-fluid" src="img/pesto.jpg" alt="pesto"></figure>
+								<div>
+									<h3>Tortelines con pesto</h3>
+									<p>A estos tortellini con salsa de pesto les puedes a�adir unos tomates cherries, o alguna otra
+										hortaliza fresca para darle un toque m�s primaveral.</p>
+									<ul>
+										<li>225 gr. de tortellini.</li>
+										<li>100 gr. de parmesano rallado.</li>
+										<li>50 gr. de pi�ones.</li>
+										<li>Dos dientes de ajo.</li>
+										<li>Aceite de oliva.</li>
+										<li>Unas hojas de albahaca fresca.</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article>
+							<div class="row row-cols-md-2 ">
+								<figure><img class="img-fluid" src="img/bolognesa.jpg" alt="bolognesa"></figure>
+								<div>
+									<h3>Tortelines con pesto</h3>
+									<p>A estos tortellini con salsa de pesto les puedes a�adir unos tomates cherries, o alguna otra
+										hortaliza fresca para darle un toque m�s primaveral.</p>
+									<ul>
+										<li>225 gr. de tortellini.</li>
+										<li>100 gr. de parmesano rallado.</li>
+										<li>50 gr. de pi�ones.</li>
+										<li>Dos dientes de ajo.</li>
+										<li>Aceite de oliva.</li>
+										<li>Unas hojas de albahaca fresca.</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+	</main>
+	<footer id="contacto ">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row justify-content-center align-content-center py-3 row-cols-md-2 row-cols-xl-3">
+					<div>
+						<h3>Recibir promos semanales</h3>
+						<form action="#" class="">
+							<label for="nombre" class="form-label">Nombre y apellido</label>
+							<input type="text" class="form-control" id="nombre">
+							<label for="email" class="form-label">Mail</label>
+							<input type="email" class="form-control" id="email" placeholder="mail@mail.com">
+							<label for="tel" class="form-label">Telefono</label>
+							<input type="tel" class="form-control" id="tel" placeholder="099000000">
+
+							<input type="submit" class="btn btn-warning mt-2" value="Quiero spam!">
+						</form>
+					</div>
+					<div>
+						<h3>Sucursales</h3>
+						<table class="table table-dark">
+							<thead>
+								<tr>
+									<th>Direccion</th>
+									<th>Horario</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> Nuestra Se�ora de la Encina 1578</td>
+									<td> Lunes a Jueves - 10 a 18 hs</td>
+								</tr>
+								<tr>
+									<td> Pantale�n Artigas 1555</td>
+									<td> Domingo a Viernes - 10 a 13 hs</td>
+								</tr>
+								<tr>
+									<td> Juan Ram�n Jim�nez 3789</td>
+									<td> Jueves a Domingo - 10 a 18 hs</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="d-none d-xl-block align-self-center">
+						<p>
+							No hay mejor plato que el preparado al instante especialmente para ti. Esa es la especialidad de Fatto In
+							Casa. </p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
