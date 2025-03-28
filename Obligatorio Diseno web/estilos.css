@@ -1,0 +1,461 @@
+/* estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Merriweather", sans-serif;
+  color: var(--white);
+}
+/* Variables de color */
+:root {
+  --colorheaderyfooter: #fc6161;
+  --white: #FFFFFF;
+  --colorbuttons: rgb(110, 35, 110);
+  --colorsection: rgb(20, 1, 1);
+}
+/* Botones */
+.button {
+  border: none;
+  padding: 10px 10px;
+  align-content: center;
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: var(--colorbuttons);
+
+}
+/* main container */
+.centrado {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+/*titulos*/
+h1 {
+  font-size: 2.5em;
+}
+h1,h3,h2 {
+  padding-bottom: 20px;
+
+}
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 45px;
+}
+h3{
+  font-size: 2em;
+}
+
+/* header */
+
+#menu div {
+  align-content: center;
+}
+
+
+header a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+/* menu*/
+#menu {
+  display: flex;
+}
+
+#menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#menu li {
+  padding-right: 18px;
+  align-content: center;
+}
+
+#menu a {
+  align-items: flex-start
+}
+
+header {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 16%, rgba(252,122,70,1) 42%, rgba(227,247,63,1) 59%, rgba(240,34,55,1) 81%);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1
+}
+
+header div:first-child {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu li:first-child {
+  padding-left: 0;
+}
+
+/*Logo de footer y header*/
+header img,
+footer img {
+  width: 60px;
+  border-radius: 100%;
+  padding: 10px 0;
+}
+/* sections */
+section{
+  padding:2em 0 ;
+  height: auto;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,84,35,1) 23%, rgba(9,9,121,1) 98%, rgba(0,212,255,1) 100%);
+}
+/* Oto Matsuri */
+#OtoMatsuri {
+  display: flex;
+  background-image: url(imgsObligatorioDIW/otomatsurirecortada.png);
+  background-size: cover;
+  height: 430px;
+  align-items: center;
+}
+#comprarEntradas {
+  margin-top: 30px;
+}
+#OtoMatsuri p {
+  padding-bottom: 30px;
+}
+
+#OtoMatsuri a:hover {
+  color: rgb(5, 0, 1);
+}
+/*section novedades*/
+#Novedades {
+  align-content: center;
+  background: rgb(48,12,6);
+background: linear-gradient(270deg, rgba(48,12,6,1) 1%, rgba(232,94,35,1) 13%, rgba(36,16,107,1) 91%, rgba(17,10,1,1) 100%);;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+
+}
+.invertido {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+#Novedades p {
+  padding-bottom:15px;
+}
+#Novedades img{
+  width: 400px;
+  height: 350px;
+
+}
+
+
+
+#Novedades1{
+  margin-bottom: 120px;
+}
+
+.flex div:first-child,
+#Novedades2 div:first-child {
+  width: 60%;
+  align-content: center;
+}
+
+/*section actividades*/
+#Actividades {
+
+  
+  align-content: center;
+}
+#Actividades img {
+  width: 60%;
+}
+/*Tabla*/
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+}
+th{
+  text-transform: uppercase;
+}
+.espaciado {
+  display: flex;
+
+  justify-content: space-between;
+  height: 450px;
+  align-items: center;
+}
+td p{
+  padding-bottom: 10px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+tr:nth-of-type(even) td {
+  background-color: #928585;
+}
+
+tr:nth-of-type(odd) td {
+  background-color: #4b3f3f;
+}
+
+th {
+  background-color: orangered;
+  color: aliceblue;
+}
+
+
+
+
+td:nth-child(2), th:nth-child(2) {
+  width: 55%;
+}
+
+td:nth-child(1) {
+  text-align: center;
+
+}
+
+td:nth-child(3) {
+  text-align: right;
+
+}
+
+th:nth-child(3) {
+  text-align: right;
+
+}
+
+.artista {
+  text-align: left;
+}
+
+
+/*section galeria*/
+#Galeria {
+  background: rgb(48,12,6);
+background: linear-gradient(270deg, rgba(48,12,6,1) 1%, rgba(232,94,35,1) 13%, rgba(36,16,107,1) 91%, rgba(17,10,1,1) 100%);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+#Galeria div:first-child {
+  height: 700px;
+  align-content: center;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item a {
+  position: absolute;
+  bottom: 10px;
+  background-color: red;
+  right: 10px;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+.galeria figure:nth-child(1) {
+  grid-column: span 2;
+}
+
+.galeria figure:nth-child(2) {
+  grid-row: span 2;
+}
+
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+.galeria_img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+/*Testimonios*/
+#Testimonios {
+ 
+  align-content: center;
+  
+}
+
+#Testimonios div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#Testimonios div img {
+  width: 60px;
+  padding-bottom: 10px;
+  border-radius: 100%;
+}
+
+#Testimonios blockquote {
+  width: 60%;
+  padding-bottom: 20px;
+}
+.material-symbols-outlined {
+  padding-bottom: 5px;
+  font-size: 3em;
+}
+/*section contactos*/
+/*form*/
+
+input[type="email"],
+textarea {
+  width: 100%;
+
+}
+
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  height: 200px
+}
+#Contactos{
+  background: rgb(48,12,6);
+  background: linear-gradient(270deg, rgba(48,12,6,1) 1%, rgba(232,94,35,1) 13%, rgba(36,16,107,1) 91%, rgba(17,10,1,1) 100%);
+}
+
+#Contactos label {
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+#name-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"],
+select {
+  width: 570px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: none;
+}
+
+.submit input {
+  padding: 8px;
+  width: 140px;
+  background-color: #fc6161;
+  border: none;
+  border-radius: 1px;
+}
+
+input, select,
+option,
+textarea {
+  padding: 8px;
+  color: black;
+}
+
+#Contactos fieldset div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.submit {
+  margin: auto;
+}
+caption{
+  font-size: 2em;
+}
+
+input[type="submit"]:hover{
+color: crimson;
+cursor: pointer;
+}
+input[type="checkbox"]:hover,
+input[type="radio"]:hover,
+select{
+  cursor: pointer;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 16%, rgba(252,122,70,1) 42%, rgba(227,247,63,1) 59%, rgba(240,34,55,1) 81%);
+  margin: 0 auto;
+  align-items: center;
+}
+
+footer div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+footer div p {
+  align-content: center;
+}
+.sociales img {
+  width: 32px;
+}
+.sociales {
+  align-content: center;
+}
+footer a {
+  align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
